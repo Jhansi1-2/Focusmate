@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0; padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+header {
+  background: #4CAF50; 
+  color: white; 
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+}
+#theme-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ffcc00;
+  color: black;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.container {
+  padding: 1rem;
+}
+section {
+  margin-bottom: 2rem;
+}
+input, button, textarea, select {
+  padding: 8px;
+  margin: 5px 0;
+  font-size: 16px;
+}
+button {
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn-start { background-color: #4CAF50; color: white; }
+.btn-pause { background-color: #2196F3; color: white; }
+.btn-reset { background-color: #f44336; color: white; }
+.btn-login { background-color: #ff5722; color: white; }
+.btn-task { background-color: #00897b; color: white; }
+.btn-save { background-color: #6a1b9a; color: white; }
+.hidden { display: none; }
+#login-section, #main-app {
+  max-width: 600px;
+  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  background: white;
+}
+.task {
+  display: flex;
+  justify-content: space-between;
+  background: #e7ffe7;
+  padding: 5px;
+  margin: 4px 0;
+}
+#timer-display {
+  font-size: 24px;
+  margin: 10px 0;
+}
+#quote-box {
+  background-color: #e0f7fa;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+body.dark-mode header {
+  background: #1f1f1f;
+  color: #ffffff;
+}
+body.dark-mode #main-app,
+body.dark-mode #login-section {
+  background-color: #1e1e1e;
+  border-color: #444;
+}
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+  background-color: #333;
+  color: white;
+  border: 1px solid #555;
+}
+body.dark-mode .task {
+  background: #2a2a2a;
+}
+body.dark-mode .btn-start { background-color: #2e7d32; }
+body.dark-mode .btn-pause { background-color: #1565c0; }
+body.dark-mode .btn-reset { background-color: #c62828; }
+body.dark-mode #theme-btn {
+  background-color: #4CAF50;
+  color: white;
+}

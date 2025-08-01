@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>All-in-One Productivity Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🧠 Productivity Dashboard</h1>
+  <button onclick="toggleDarkMode()" id="theme-btn">🌙 Dark Mode</button>
+</header>
+
+<div class="container">
+    
+  <section id="main-app">
+    <h2 id="greeting">Welcome!</h2>
+
+    <div id="quote-box"></div>
+    <button onclick="displayRandomQuote()" style="margin-top:10px; background-color:#6a5acd; color:white; padding:8px 12px; border:none; border-radius:5px; cursor:pointer;">🔄 Refresh Quote</button>
+
+    <section>
+      <h3>✅ To-Do List</h3>
+      <input type="text" id="task-input" placeholder="Add a new task" />
+      <button onclick="addTask()" class="btn-task">Add Task</button>
+      <div id="task-list"></div>
+    </section>
+
+    <section>
+      <h3>📝 Notes</h3>
+      <label for="note-page">Select Page:</label>
+      <select id="note-page" onchange="loadNotes()">
+        <option value="page1">Page 1</option>
+        <option value="page2">Page 2</option>
+        <option value="page3">Page 3</option>
+      </select><br>
+      <textarea id="notes" rows="5" cols="50" placeholder="Write your notes here..."></textarea><br>
+      <button onclick="saveNote()" class="btn-save">Save Notes</button>
+    </section>
+
+    <section>
+      <h3>⏱ Custom Timer</h3>
+      <label>Minutes: <input type="number" id="custom-min" value="0" min="0"></label>
+      <label>Seconds: <input type="number" id="custom-sec" value="0" min="0" max="59"></label><br>
+      <div id="timer-display">00:00</div>
+      <button class="btn-start" onclick="startCustomTimer()">▶ Start</button>
+      <button class="btn-pause" onclick="pauseTimer()">⏸ Pause</button>
+      <button class="btn-reset" onclick="resetCustomTimer()">⏹ Reset</button>
+    </section>
+  </section>
+
+</div>
+
+<audio id="alarmSound" preload="auto">
+  <source src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg" type="audio/ogg">
+</audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
