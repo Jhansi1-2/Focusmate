@@ -6,7 +6,7 @@ This is a personal productivity web application designed to help users, particul
 
 ---
 
-## 🚀 Key Features
+## 🚀 Key Features..
 
 - ✅ **To-Do List**: Add and delete tasks to keep track of your daily agenda.  
 - 📝 **Notes**: A multi-page note-taking system to save and organize thoughts.  
